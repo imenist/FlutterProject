@@ -29,7 +29,7 @@ class LayoutDemo extends StatelessWidget {
             children: <Widget>[
               AspectRatio(
                 aspectRatio: 16/9,
-                child: Image.network(src,fit: BoxFit.cover,),
+                child: Image.network("src",fit: BoxFit.cover,),
               ),
               ListTile(
                 //leading:Image
