@@ -10,7 +10,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      //左右
       crossAxisAlignment: CrossAxisAlignment.start,
+      //上下
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         RaisedButton(
@@ -39,6 +41,13 @@ class _HomePageState extends State<HomePage> {
           child: Text("TabBarController跳转"),
           onPressed: (){
             Navigator.pushNamed(context, '/tabbarcontroller');
+          },
+        ),
+        SizedBox(height: 20,),
+        RaisedButton(
+          child: Text("按钮跳转"),
+          onPressed: (){
+            Navigator.pushNamed(context, '/button');
           },
         )
       ],
