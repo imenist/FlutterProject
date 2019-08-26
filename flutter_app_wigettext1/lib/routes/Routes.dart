@@ -10,6 +10,7 @@ import '../pages/user/RegisterFirst.dart';
 import '../pages/user/RegisterSecond.dart';
 import '../pages/user/RegisterThird.dart';
 import '../pages/TabBarController.dart';
+import '../pages/User.dart';
 
 //配置路由
 final routes = {
@@ -23,6 +24,7 @@ final routes = {
   '/registerSecond' : (context) => RegisterSecondPage(),
   '/registerThird' : (context) => RegisterThirdPage(),
   '/tabbarcontroller':(context) => TabBarControllerPage(),
+  '/user':(context) => UserPage(),
 };
 //跳转传值固定写法
 var onGenerateRoute = (RouteSettings settings) {

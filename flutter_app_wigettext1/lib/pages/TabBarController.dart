@@ -17,9 +17,6 @@ class _TabBarControllerPageState extends State<TabBarControllerPage> with Single
         length: 2,
         vsync: this  //固定写法
     );
-    _tabController.addListener((){
-      print(_tabController.index);
-    });
   }
 
   @override
