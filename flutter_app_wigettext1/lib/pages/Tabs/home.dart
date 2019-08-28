@@ -60,9 +60,9 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 20,),
               RaisedButton(
-                child: Text("Radio"),
+                child: Text("FormDemo"),
                 onPressed: (){
-                  Navigator.pushNamed(context, '/radio');
+                  Navigator.pushNamed(context, '/formDemo');
                 },
               ),
             ],

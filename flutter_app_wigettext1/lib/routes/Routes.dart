@@ -14,6 +14,7 @@ import '../pages/User.dart';
 import '../pages/Button.dart';
 import '../pages/TextField.dart';
 import '../pages/Radio.dart';
+import '../pages/FormDemo.dart';
 
 //配置路由
 final routes = {
@@ -31,6 +32,7 @@ final routes = {
   '/button':(context) => ButtonDemoPage(),
   '/textField':(context) => TextFieldDemoPage(),
   '/radio' : (context) => RadioDemoPage(),
+  '/formDemo' : (context) => FormDemoPage(),
 };
 //跳转传值固定写法
 var onGenerateRoute = (RouteSettings settings) {
