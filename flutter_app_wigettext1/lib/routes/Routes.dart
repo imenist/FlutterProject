@@ -12,6 +12,8 @@ import '../pages/user/RegisterThird.dart';
 import '../pages/TabBarController.dart';
 import '../pages/User.dart';
 import '../pages/Button.dart';
+import '../pages/TextField.dart';
+import '../pages/Radio.dart';
 
 //配置路由
 final routes = {
@@ -27,6 +29,8 @@ final routes = {
   '/tabbarcontroller':(context) => TabBarControllerPage(),
   '/user':(context) => UserPage(),
   '/button':(context) => ButtonDemoPage(),
+  '/textField':(context) => TextFieldDemoPage(),
+  '/radio' : (context) => RadioDemoPage(),
 };
 //跳转传值固定写法
 var onGenerateRoute = (RouteSettings settings) {
