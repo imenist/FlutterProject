@@ -153,8 +153,11 @@ class _FormDemoPageState extends State<FormDemoPage> {
                 onPressed: (){
                   setState(() {
                     print("姓名:"+this._username);
-                    print("性别:"+this._sex.toString());
+                    //判断男还是女
+                    print("性别:"+(this._sex == 1?"男" : "女"));
                     print("密码:"+this._password);
+                    //测试运算符~/,表示除，没有小数
+                    print(15 ~/ 10);
                     printHobby();
                   });
                 },
@@ -169,7 +172,9 @@ class _FormDemoPageState extends State<FormDemoPage> {
   void printHobby(){
     print("爱好:");
     for(var i=0; i<hobby.length;i++){
-      print(hobby[i]["title"]);
+      if(hobby[i]["checked"]){
+        print(hobby[i]["title"]);
+      }
     }
   }
 
